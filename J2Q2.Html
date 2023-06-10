@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <center>
+        <br><br><br>
+        <script>
+            function light(sw) {
+              var pic;
+              if (sw == 0) {
+                pic = "blue.jpg"} 
+              
+              else if (sw == 1) {
+                pic ="grey.jpg"}
+                            
+              else {
+                pic = ""}
+
+              document.getElementById('myImage').src = pic;}
+        </script>
+
+        <img id="myImage" src="" width="100">
+        
+        <p>        
+        <button type="button" onclick="light(0)">Blue</button>    
+        <button type="button" onclick="light(1)">Grey</button> 
+        
+        </p>
+    </center>
+</body>
+</html>
